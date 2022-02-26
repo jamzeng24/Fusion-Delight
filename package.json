@@ -1,0 +1,22 @@
+{
+  "name": "fusion-delight",
+  "version": "1.0.0",
+  "private": true,
+  "description": "fusion-delight",
+  "author": "James Zeng",
+  "keywords": [
+    "gatsby"
+  ],
+  "scripts": {
+    "develop": "gatsby develop",
+    "start": "gatsby develop",
+    "build": "gatsby build",
+    "serve": "gatsby serve",
+    "clean": "gatsby clean"
+  },
+  "dependencies": {
+    "gatsby": "^4.8.0",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1"
+  }
+}
