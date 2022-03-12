@@ -1,9 +1,12 @@
 import React from 'react'
-import { Link } from 'gatsby'
+import { Link } from 'gatsby-plugin-react-i18next'
 
 import { StaticImage } from 'gatsby-plugin-image'
+import { useI18next } from 'gatsby-plugin-react-i18next'
 
 const Header = () => {
+  const { changeLanguage } = useI18next();
+
   return (
     <header className='container mt-6'>
       <div className='columns'>
@@ -13,9 +16,19 @@ const Header = () => {
           </Link>
         </div>
         <div className='column is-2 is-offset-6'>
-          <button>ENGLISH</button>
+          <button
+            onClick={(e) => {
+              e.preventDefault()
+              changeLanguage('en')
+            }}
+          >ENGLISH</button>
           {' / '}
-          <button>中文</button>
+          <button
+            onClick={(e) => {
+              e.preventDefault()
+              changeLanguage('zh')
+            }}
+          >中文</button>
         </div>
       </div>
     </header>

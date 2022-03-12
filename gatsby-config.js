@@ -9,6 +9,31 @@ module.exports = {
       "gatsby-plugin-sharp",
       "gatsby-plugin-mdx",
       "gatsby-plugin-sass",
-      "gatsby-plugin-react-helmet"
+      "gatsby-plugin-react-helmet",
+      {
+        resolve: 'gatsby-source-filesystem',
+        options: {
+          path: `${__dirname}/locales`,
+          name: 'locale'
+        }
+      },
+      {
+        resolve: 'gatsby-plugin-react-i18next',
+        options: {
+          localeJsonSourceName: 'locale',
+          languages: ['en', 'zh'],
+          defaultLanguage: 'en',
+          siteUrl: 'https://fusiondelight.gatsbyjs.io',
+          i18nextOptions: {
+            lowerCaseLng: true,
+            saveMissing: false,
+            interpolation: {
+              escapeValue: false
+            },
+            keySeparator: false,
+            nsSeparator: false
+          }
+        }
+      }
     ]
 }

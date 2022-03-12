@@ -1,8 +1,9 @@
 import React, { useState } from 'react'
-import { Link } from 'gatsby'
+import { Link, useTranslation } from 'gatsby-plugin-react-i18next'
 
 const Nav = () => {
   const [active, setActive] = useState(false)
+  const { t } = useTranslation()
 
   return (
     <nav className='navbar is-transparent' role='navigation' aria-label='main navigation'>
@@ -20,7 +21,7 @@ const Nav = () => {
         <div id='burger' className={`navbar-menu ${active ? 'is-active' : ''}`}>
           <div className='navbar-start' style={{flexGrow: 1, justifyContent: 'center'}}>
             <Link className='navbar-item mx-6 is-size-5' to="/about" activeClassName='active'>
-              About Us
+              {t('about')}
             </Link>
             <div className='navbar-item mx-6 is-size-5 has-dropdown is-hoverable'>
               <Link className='navbar-link is-arrowless' to="/menu" activeClassName='active'>
