@@ -19,6 +19,10 @@ button {
 	outline: inherit;
 }
 
+.lang {
+    font-weight: 300;
+}
+
 .lang:hover {
     color: $fd-secondary;
 }
@@ -35,6 +39,18 @@ button {
 }
 
 .navbar-item.active {
+    color: $fd-secondary;
+    pointer-events: none;
+}
+
+.norm-link {
+    font-weight: bold;
+    text-transform: uppercase;
+    text-decoration: underline;
+    color: $fd-primary;
+}
+
+.norm-link:hover {
     color: $fd-secondary;
 }
 

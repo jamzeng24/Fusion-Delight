@@ -12,11 +12,12 @@ const Header = () => {
       <div className='columns'>
         <div className='column is-4'>
           <Link to='/'>
-            <StaticImage height={128} alt='logo' src='../images/logo.png' />
+            <StaticImage placeholder='blurred' alt='logo' src='../images/logo.png' />
           </Link>
         </div>
-        <div className='column is-2 is-offset-6'>
+        <div className='column is-2 is-offset-6 has-text-centered'>
           <button
+            className='lang is-size-5'
             onClick={(e) => {
               e.preventDefault()
               changeLanguage('en')
@@ -24,6 +25,7 @@ const Header = () => {
           >ENGLISH</button>
           {' / '}
           <button
+            className='lang is-size-5'
             onClick={(e) => {
               e.preventDefault()
               changeLanguage('zh')

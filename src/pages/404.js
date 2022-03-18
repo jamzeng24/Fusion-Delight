@@ -8,8 +8,11 @@ const NotFoundPage = () => {
   const { t } = useTranslation
 
   return (
-    <Layout pageTitle='404 | Fusion Delight'>
-      <h2 className='subtitle is-2 is-flex is-justify-content-center'>Sorry, I can't find what you're looking for!</h2>
+    <Layout pageTitle='404'>
+      <div className='content is-flex is-flex-direction-column has-text-centered'>
+        <h2>Sorry!</h2>
+        <h2>I can't find what you are looking for.</h2>
+      </div>
     </Layout>
   )
 }

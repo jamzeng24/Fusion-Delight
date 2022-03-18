@@ -8,8 +8,37 @@ const ContactPage = () => {
   const { t } = useTranslation()
 
   return (
-    <Layout pageTitle='Contact | Fusion Delight'>
-      Hello
+    <Layout pageTitle='Contact'>
+      <div className='columns'>
+        <div className='column'>
+          <div className='content'>
+            <h2>Contact Information</h2>
+            <p>Tel: 510-895-1818</p>
+            <h2>Booking / Special Requests</h2>
+            <p>
+              Please call us and mention booking / banquets.
+              <br />
+              More information will be provided to you from there.
+            </p>
+          </div>
+        </div>
+        <div className='column'>
+          <div className='content'>
+            <h2>FAQ</h2>
+            <p className='has-text-weight-bold'>Do you take reservations? If so, how can I make one?</p>
+            <p>
+              For dim sum, we do not take reservations. In order to be certain that your party gets a table, please arrive early and allow the host to put you and your party in the queue.
+            </p>
+            <p>
+              For dinner, please call us at 510-895-1818 and let us know the time, date, and number of people for your reservation.
+            </p>
+            <p className='has-text-weight-bold'>Do you serve dim sum during dinner?</p>
+            <p>Dim sum is traditionally enjoyed only during brunch time and we want to stay true to original practice. So, we do not serve dim sum during dinner.</p>
+            <p className='has-text-weight-bold'>Do you sell gift cards?</p>
+            <p>We do not sell gift cards, but we will consider it in the future!</p>
+          </div>
+        </div>
+      </div>
     </Layout>
   )
 }

@@ -28,8 +28,8 @@ const Nav = () => {
                 Menu
               </Link>
               <div className='navbar-dropdown'>
-                <Link className='navbar-item' to="/menu/lunch" activeClassName='active'>
-                  Lunch / Dimsum
+                <Link className='navbar-item' to="/menu/dimsum" activeClassName='active'>
+                  Dim Sum
                 </Link>
                 <Link className='navbar-item' to="/menu/dinner" activeClassName='active'>
                   Dinner
