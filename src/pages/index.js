@@ -4,24 +4,23 @@ import Layout from '../components/layout'
 import { graphql } from 'gatsby'
 import { StaticImage } from 'gatsby-plugin-image'
 
+import { useTranslation } from 'react-i18next'
+
 const IndexPage = () => {
+  const { t } = useTranslation()
 
   return (
-    <Layout pageTitle='Home'>
+    <Layout pageTitle={t('Home')}>
       <div className='columns mb-0'>
         <div className='column'>
-          <h3 className='title is-3'>Fusion Delight</h3>
-          <h5 className='subtitle is-5'>
-            Dim sum
-            {' • '}
-            Seafood
-            {' • '}
-            Teahouse
-          </h5>
+          <p className='title is-3'>Fusion Delight 美食坊</p>
+          <p className='subtitle is-5'>
+            {t('Dim sum') + ' • ' + t('Seafood') + ' • ' + t('Teahouse')}
+          </p>
           <div className='block'>
-            <p>Dim sum: 10:30am - 3:00pm</p>
-            <p>Dinner: 5:30pm - 9:30pm</p>
-            <p>Tel: 510-895-1818</p>
+            <p>{t('Dim sum') + ': ' + t('Lunch Time')}</p>
+            <p>{t('Dinner') + ': ' + t('Dinner Time')}</p>
+            <p>{t('Phone')}: 510-895-1818</p>
           </div>
         </div>
         <div className='column is-flex is-justify-content-flex-end' style={{gap: '1px'}}>

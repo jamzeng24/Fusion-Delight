@@ -4,11 +4,14 @@ import Layout from '../components/layout'
 import { graphql } from 'gatsby'
 import { StaticImage } from 'gatsby-plugin-image'
 
+import { useTranslation } from 'react-i18next'
+
 const AboutPage = () => {
+  const { t } = useTranslation()
   
   return (
-    <Layout pageTitle="About Us">
-      <h4 className='title is-4'>Our Story</h4>
+    <Layout pageTitle={t('About Us')}>
+      <h4 className='title is-4'>{t('Our Story')}</h4>
       <div className='columns'>
         <div className='column'>
           <div className='content'>
@@ -22,18 +25,18 @@ const AboutPage = () => {
           </div>
         </div>
         <div className='column'>
-          <StaticImage height={200} alt='design3' src='../images/about/render3.jpg'/>
+          <StaticImage height={200} placeholder='blurred' alt='design3' src='../images/about/render3.jpg'/>
         </div>
       </div>
       <div className='columns'>
         <div className='column'>
-          <StaticImage height={200} alt='design1' src='../images/about/render.jpg'/>
+          <StaticImage height={200} placeholder='blurred' alt='design1' src='../images/about/render.jpg'/>
         </div>
         <div className='column'>
-          <StaticImage height={200} alt='design2' src='../images/about/render2.jpg'/>
+          <StaticImage height={200} placeholder='blurred' alt='design2' src='../images/about/render2.jpg'/>
         </div>
         <div className='column'>
-          <StaticImage height={200} alt='design4' src='../images/about/render4.jpg'/>
+          <StaticImage height={200} placeholder='blurred' alt='design4' src='../images/about/render4.jpg'/>
         </div>
       </div>
     </Layout>

@@ -8,13 +8,13 @@ const ContactPage = () => {
   const { t } = useTranslation()
 
   return (
-    <Layout pageTitle='Contact'>
+    <Layout pageTitle={t('Contact')}>
       <div className='columns'>
         <div className='column'>
           <div className='content'>
-            <h2>Contact Information</h2>
-            <p>Tel: 510-895-1818</p>
-            <h2>Booking / Special Requests</h2>
+            <h2>{t('Contact Information')}</h2>
+            <p>{t('Phone')}: 510-895-1818</p>
+            <h2>{t('Booking') + ' / ' + t('Special Requests')}</h2>
             <p>
               Please call us and mention booking / banquets.
               <br />
@@ -24,7 +24,7 @@ const ContactPage = () => {
         </div>
         <div className='column'>
           <div className='content'>
-            <h2>FAQ</h2>
+            <h2>{t('FAQ')}</h2>
             <p className='has-text-weight-bold'>Do you take reservations? If so, how can I make one?</p>
             <p>
               For dim sum, we do not take reservations. In order to be certain that your party gets a table, please arrive early and allow the host to put you and your party in the queue.

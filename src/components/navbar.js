@@ -21,26 +21,26 @@ const Nav = () => {
         <div id='burger' className={`navbar-menu ${active ? 'is-active' : ''}`}>
           <div className='navbar-start' style={{flexGrow: 1, justifyContent: 'center'}}>
             <Link className='navbar-item mx-6 is-size-5' to="/about" activeClassName='active'>
-              {t('about')}
+              {t('About Us')}
             </Link>
             <div className='navbar-item mx-6 is-size-5 has-dropdown is-hoverable'>
-              <Link className='navbar-link is-arrowless' to="/menu" activeClassName='active'>
-                Menu
-              </Link>
+              <a className='navbar-link'>
+                {t('Menu')}
+              </a>
               <div className='navbar-dropdown'>
-                <Link className='navbar-item' to="/menu/dimsum" activeClassName='active'>
-                  Dim Sum
+                <Link className='navbar-item' to="/dimsum" activeClassName='active'>
+                  {t('Dim sum')}
                 </Link>
-                <Link className='navbar-item' to="/menu/dinner" activeClassName='active'>
-                  Dinner
+                <Link className='navbar-item' to="/dinner" activeClassName='active'>
+                  {t('Dinner')}
                 </Link>
               </div>
             </div>
             <Link className='navbar-item mx-6 is-size-5' to="/location" activeClassName='active'>
-              Location
+              {t('Location')}
             </Link>
             <Link className='navbar-item mx-6 is-size-5' to="/contact" activeClassName='active'>
-              Contact
+              {t('Contact')}
             </Link>
           </div>
         </div>

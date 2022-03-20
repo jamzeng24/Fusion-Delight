@@ -1,6 +1,6 @@
 module.exports = {
     siteMetadata: {
-      title: "Fusion Delight",
+      title: "Fusion Delight 美食坊",
       description: "A contemporary Asian restaurant that pushes the limits on foreign cuisine, combining aspects of other cultures to create beautiful dishes.",
       author: "James Zeng"
     },
