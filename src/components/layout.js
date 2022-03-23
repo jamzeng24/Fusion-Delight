@@ -13,6 +13,8 @@ const Layout = ({ pageTitle, children }) => {
     query {
       site {
         siteMetadata {
+          author
+          description
           title
         }
       }
@@ -23,6 +25,8 @@ const Layout = ({ pageTitle, children }) => {
     <>
       <Helmet>
         <title>{pageTitle} | {data.site.siteMetadata.title}</title>
+        <meta name='description' content={data.site.siteMetadata.description} />
+        <meta name='author' content={data.site.siteMetadata.author} />
       </Helmet>
       <Header />
       <Nav />

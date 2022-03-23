@@ -15,13 +15,13 @@ const AboutPage = () => {
       <div className='columns'>
         <div className='column'>
           <div className='content'>
-            <p>Fusion Delight is located at San Leandro's Greenhouse Marketplace, near the neighboring San Lorenzo. Founded by a family who has been in the restaurant business for over 30 years, our latest venture, Fusion Delight, is a modern-day combination of Chinese cuisine, from Hong Kong to Guangzhou to other areas in Asia that feature cultural dishes. Along with our contemporary interior, we aim to provide a unique experience all of our diners.</p>
+            <p>Fusion Delight is located at San Leandro's Greenhouse Marketplace. Founded by a family who has been in the restaurant business for over 30 years, our latest venture, Fusion Delight, is a modern-day combination of Chinese cuisine, from Hong Kong to Guangzhou to other areas in Asia that feature cultural dishes. Along with our contemporary interior, we aim to provide a unique experience all of our diners.</p>
           </div>
         </div>
         <div className='column'>
           <div className='content'>
             <p>The first iteration of Fusion Delight started as Delight Garden, which was opened back in 2011, in a different area of the same San Leandro plaza. As time progressed, we aimed to push our customer experience by moving to our location today, with a redesigned interior and more overall space.</p>
-            <p>We plan to update our interior to keep our modern, fresh look.</p>
+            <p>We plan to update our interior to the pictures shown to keep our modern, fresh look.</p>
           </div>
         </div>
         <div className='column'>

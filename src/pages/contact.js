@@ -4,6 +4,8 @@ import Layout from '../components/layout'
 import { graphql } from 'gatsby'
 import { useTranslation } from 'react-i18next'
 
+import { StaticImage } from 'gatsby-plugin-image'
+
 const ContactPage = () => {
   const { t } = useTranslation()
 
@@ -21,6 +23,7 @@ const ContactPage = () => {
               More information will be provided to you from there.
             </p>
           </div>
+          <StaticImage height={250} alt='seafoodplatter' placeholder='blurred' src='../images/contact/seafoodplatter.png'/>
         </div>
         <div className='column'>
           <div className='content'>

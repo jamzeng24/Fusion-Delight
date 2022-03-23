@@ -24,9 +24,9 @@ const Nav = () => {
               {t('About Us')}
             </Link>
             <div className='navbar-item mx-6 is-size-5 has-dropdown is-hoverable'>
-              <a className='navbar-link'>
+              <p className='navbar-link'>
                 {t('Menu')}
-              </a>
+              </p>
               <div className='navbar-dropdown'>
                 <Link className='navbar-item' to="/dimsum" activeClassName='active'>
                   {t('Dim sum')}
