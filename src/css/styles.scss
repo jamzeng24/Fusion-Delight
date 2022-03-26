@@ -5,23 +5,16 @@ $fd-primary: rgb(52, 36, 96);
 $fd-secondary: rgb(137, 0, 200);
 
 $scheme-main: $beige-lighter;
+$body-size: 18px;
 
 $navbar-item-hover-color: $fd-secondary;
 $navbar-dropdown-arrow: $fd-primary;
 $navbar-dropdown-item-hover-color: $fd-secondary;
 
-button {
-    background: none;
-	color: inherit;
-	border: none;
-	padding: 0;
-	font: inherit;
-	cursor: pointer;
-	outline: inherit;
-}
-
 .lang {
+    text-transform: uppercase;
     font-weight: 300;
+    color: inherit;
 }
 
 .lang:hover {

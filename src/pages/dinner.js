@@ -13,8 +13,7 @@ const DinnerPage = () => {
     <Layout pageTitle={t('Dinner')}>
       <div className='block has-text-centered'>
         <a className='norm-link is-size-4' href='/dinner.pdf'>&gt;{t('Dinner menu')}&lt;</a>
-        <h6 className='title is-6'>{t('Prices')}</h6>
-        <h6 className='subtitle is-6'>{t('Updated Prices')}</h6>
+        <p className='is-size-6'>{t('Prices')}</p>
       </div>
       <h4 className='title is-4 has-text-centered'>{t('Popular Dishes')}</h4>
       <div className='is-flex is-flex-wrap-wrap is-justify-content-space-between' style={{gap: 10}}>

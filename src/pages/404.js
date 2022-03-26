@@ -5,13 +5,13 @@ import { graphql } from 'gatsby'
 import { useTranslation } from "react-i18next"
 
 const NotFoundPage = () => {
-  const { t } = useTranslation
+  const { t } = useTranslation()
 
   return (
     <Layout pageTitle='404'>
       <div className='content is-flex is-flex-direction-column has-text-centered'>
-        <h2>Sorry!</h2>
-        <h2>I can't find what you are looking for.</h2>
+        <h2>{t('Sorry') + '!'}</h2>
+        <h2>{t('Cant find')}</h2>
       </div>
     </Layout>
   )

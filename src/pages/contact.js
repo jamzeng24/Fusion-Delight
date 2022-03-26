@@ -14,31 +14,30 @@ const ContactPage = () => {
       <div className='columns'>
         <div className='column'>
           <div className='content'>
-            <h2>{t('Contact Information')}</h2>
-            <p>{t('Phone')}: 510-895-1818</p>
-            <h2>{t('Booking') + ' / ' + t('Special Requests')}</h2>
-            <p>
-              Please call us and mention booking / banquets.
-              <br />
-              More information will be provided to you from there.
-            </p>
+            <h3>{t('Contact Information')}</h3>
+            <p>{t('Phone')}: 510-895-1818, 510-614-1816</p>
+            <h3>{t('Booking') + ' / ' + t('Special Requests')}</h3>
+            <p>{t('Booking Information')}</p>
           </div>
-          <StaticImage height={250} alt='seafoodplatter' placeholder='blurred' src='../images/contact/seafoodplatter.png'/>
+          <div className='columns is-desktop is-gapless'>
+            <div className='column'>
+              <StaticImage alt='mainroom' placeholder='blurred' src='../images/contact/mainroom.jpg'/>
+            </div>
+            <div className='column'>
+              <StaticImage alt='altroom' placeholder='blurred' src='../images/contact/altroom.jpg'/>
+            </div>
+          </div>
         </div>
         <div className='column'>
           <div className='content'>
-            <h2>{t('FAQ')}</h2>
-            <p className='has-text-weight-bold'>Do you take reservations? If so, how can I make one?</p>
-            <p>
-              For dim sum, we do not take reservations. In order to be certain that your party gets a table, please arrive early and allow the host to put you and your party in the queue.
-            </p>
-            <p>
-              For dinner, please call us at 510-895-1818 and let us know the time, date, and number of people for your reservation.
-            </p>
-            <p className='has-text-weight-bold'>Do you serve dim sum during dinner?</p>
-            <p>Dim sum is traditionally enjoyed only during brunch time and we want to stay true to original practice. So, we do not serve dim sum during dinner.</p>
-            <p className='has-text-weight-bold'>Do you sell gift cards?</p>
-            <p>We do not sell gift cards, but we will consider it in the future!</p>
+            <h3>{t('FAQ')}</h3>
+            <p className='has-text-weight-bold'>{t('Reservations Q')}</p>
+            <p>{t('Reservations A1')}</p>
+            <p>{t('Reservations A2')}</p>
+            <p className='has-text-weight-bold'>{t('Dim sum Q')}</p>
+            <p>{t('Dim sum A')}</p>
+            <p className='has-text-weight-bold'>{t('Gift Q')}</p>
+            <p>{t('Gift A')}</p>
           </div>
         </div>
       </div>

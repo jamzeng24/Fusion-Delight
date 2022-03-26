@@ -1,7 +1,7 @@
 import * as React from 'react'
 import { useStaticQuery, graphql } from 'gatsby'
 
-import { Helmet } from 'react-helmet'
+import { Helmet } from 'gatsby-plugin-react-i18next'
 
 import Header from './header'
 import Nav from './navbar'
@@ -33,7 +33,7 @@ const Layout = ({ pageTitle, children }) => {
       <section className='section'>
         <div className='container'>
           <div className='columns is-centered'>
-            <div className='column is-9'>
+            <div className='column is-10'>
               {children}
             </div>
           </div>

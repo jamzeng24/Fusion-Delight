@@ -7,6 +7,7 @@ module.exports = {
     plugins: [
       "gatsby-plugin-image",
       "gatsby-plugin-sharp",
+      "gatsby-transformer-sharp",
       "gatsby-plugin-sass",
       "gatsby-plugin-react-helmet",
       {
@@ -14,6 +15,13 @@ module.exports = {
         options: {
           path: `${__dirname}/locales`,
           name: 'locale'
+        }
+      },
+      {
+        resolve: 'gatsby-source-filesystem',
+        options: {
+          path: `${__dirname}/src/images/gallery`,
+          name: 'gallery'
         }
       },
       {

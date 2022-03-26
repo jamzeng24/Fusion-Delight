@@ -25,6 +25,7 @@
     "gatsby-plugin-sass": "^5.9.0",
     "gatsby-plugin-sharp": "^4.8.1",
     "gatsby-source-filesystem": "^4.8.1",
+    "gatsby-transformer-sharp": "^4.10.0",
     "i18next": "^21.6.14",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",

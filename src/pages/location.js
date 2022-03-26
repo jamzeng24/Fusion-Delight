@@ -10,23 +10,30 @@ const LocationPage = () => {
 
   return (
     <Layout pageTitle={t('Location')}>
-      <div className='columns'>
+      <div className='columns is-variable is-1'>
         <div className='column'>
-          <div className='content mb-2'>
-            <h5 className='has-text-weight-bold mb-2'>{t('Address')}</h5>
-            <a href={t('Address Link')} className='address' target='_blank' rel='noreferrer'>699 Lewelling Blvd Unit 212 San Leandro, CA 94579</a>
-            <h5 className='has-text-weight-bold mt-4 mb-2'>{t('Hours of Operation')}</h5>
-            <p>
-              {t('Open Everyday')}
-              <br />
-              {t('Dim sum') + ': ' + t('Lunch Time')}
-              <br />
-              {t('Dinner') + ': ' + t('Dinner Time')}
-            </p>
-            <p className='is-size-7'>
-              {t('Updated')}
-            </p>
+          <p className='has-text-weight-bold is-size-5 mb-2'>{t('Address')}</p>
+          <a href={t('Address Link')} className='address' target='_blank' rel='noreferrer'>699 Lewelling Blvd Unit 212 San Leandro, CA 94579</a>
+          <p className='has-text-weight-bold is-size-5 mt-4 mb-2'>{t('Business Hours')}</p>
+          <div className='columns is-variable is-1 mb-0'>
+            <div className='column'>
+              <div className='block'>
+                <p>{t('Weekdays')}</p>
+                <p>{t('Dim sum') + ': ' + t('Weekday Lunch Start') + ' - ' + t('Lunch End')}</p>
+                <p>{t('Dinner') + ': ' + t('Dinner Time')}</p>
+              </div>
+            </div>
+            <div className='column'>
+              <div className='block'>
+                <p>{t('Weekend')}</p>
+                <p>{t('Dim sum') + ': ' + t('Weekend Lunch Start') + ' - ' + t('Lunch End')}</p>
+                <p>{t('Dinner') + ': ' + t('Dinner Time')}</p>
+              </div>
+            </div>
           </div>
+          <p className='is-size-7'>
+            {t('Updated')}
+          </p>
           <StaticImage height={300} alt='storefront' placeholder='blurred' src='../images/storefront.png'/>
         </div>
         <div className='column is-flex'>
