@@ -11,34 +11,42 @@ const AboutPage = () => {
   
   return (
     <Layout pageTitle={t('About Us')}>
-      <h4 className='title is-4'>{t('Our Story')}</h4>
-      <div className='columns is-desktop'>
-        <div className='column'>
-          <div className='content'>
-            <p>{t('About1')}</p>
+      <section className='section'>
+        <div className='container'>
+          <div className='columns is-centered'>
+            <div className='column is-10'>
+              <h4 className='title is-4'>{t('Our Story')}</h4>
+              <div className='columns is-desktop'>
+                <div className='column'>
+                  <div className='content'>
+                    <p>{t('About1')}</p>
+                  </div>
+                </div>
+                <div className='column'>
+                  <div className='content'>
+                    <p>{t('About2')}</p>
+                    <p>{t('About3')}</p>
+                  </div>
+                </div>
+                <div className='column is-flex'>
+                  <StaticImage className='is-flex-grow-1' placeholder='blurred' alt='design3' src='../images/about/render3.jpg'/>
+                </div>
+              </div>
+              <div className='columns is-desktop'>
+                <div className='column is-flex'>
+                  <StaticImage className='is-flex-grow-1' placeholder='blurred' alt='design1' src='../images/about/render.jpg'/>
+                </div>
+                <div className='column is-flex'>
+                  <StaticImage className='is-flex-grow-1' placeholder='blurred' alt='design2' src='../images/about/render2.jpg'/>
+                </div>
+                <div className='column is-flex'>
+                  <StaticImage className='is-flex-grow-1' placeholder='blurred' alt='design4' src='../images/about/render4.jpg'/>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
-        <div className='column'>
-          <div className='content'>
-            <p>{t('About2')}</p>
-            <p>{t('About3')}</p>
-          </div>
-        </div>
-        <div className='column is-flex'>
-          <StaticImage className='is-flex-grow-1' placeholder='blurred' alt='design3' src='../images/about/render3.jpg'/>
-        </div>
-      </div>
-      <div className='columns is-desktop'>
-        <div className='column is-flex'>
-          <StaticImage className='is-flex-grow-1' placeholder='blurred' alt='design1' src='../images/about/render.jpg'/>
-        </div>
-        <div className='column is-flex'>
-          <StaticImage className='is-flex-grow-1' placeholder='blurred' alt='design2' src='../images/about/render2.jpg'/>
-        </div>
-        <div className='column is-flex'>
-          <StaticImage className='is-flex-grow-1' placeholder='blurred' alt='design4' src='../images/about/render4.jpg'/>
-        </div>
-      </div>
+      </section>
     </Layout>
   )
 }

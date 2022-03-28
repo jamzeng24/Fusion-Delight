@@ -9,10 +9,18 @@ const NotFoundPage = () => {
 
   return (
     <Layout pageTitle='404'>
-      <div className='content is-flex is-flex-direction-column has-text-centered'>
-        <h2>{t('Sorry') + '!'}</h2>
-        <h2>{t('Cant find')}</h2>
-      </div>
+      <section className='section'>
+        <div className='container'>
+          <div className='columns is-centered'>
+            <div className='column is-10'>
+              <div className='content is-flex is-flex-direction-column has-text-centered'>
+                <h2>{t('Sorry') + '!'}</h2>
+                <h2>{t('Cant find')}</h2>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
     </Layout>
   )
 }

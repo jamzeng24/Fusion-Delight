@@ -11,21 +11,29 @@ const DinnerPage = () => {
 
   return (
     <Layout pageTitle={t('Dinner')}>
-      <div className='block has-text-centered'>
-        <a className='norm-link is-size-4' href='/dinner.pdf'>&gt;{t('Dinner menu')}&lt;</a>
-        <p className='is-size-6'>{t('Prices')}</p>
-      </div>
-      <h4 className='title is-4 has-text-centered'>{t('Popular Dishes')}</h4>
-      <div className='is-flex is-flex-wrap-wrap is-justify-content-space-between' style={{gap: 10}}>
-        <div>
-          <StaticImage height={300} placeholder='blurred' alt='squab' src='../images/menu/squab.webp'/>
-          <p className='is-size-7 '>{t('Chinese Fried Squab')}</p>
+      <section className='section'>
+        <div className='container'>
+          <div className='columns is-centered'>
+            <div className='column is-10'>
+              <div className='block has-text-centered'>
+                <a className='norm-link is-size-4' href='/dinner.pdf'>&gt;{t('Dinner menu')}&lt;</a>
+                <p className='is-size-6'>{t('Prices')}</p>
+              </div>
+              <h4 className='title is-4 has-text-centered'>{t('Popular Dishes')}</h4>
+              <div className='is-flex is-flex-wrap-wrap is-justify-content-space-between' style={{gap: 10}}>
+                <div>
+                  <StaticImage height={300} placeholder='blurred' alt='squab' src='../images/menu/squab.webp'/>
+                  <p className='is-size-7 '>{t('Chinese Fried Squab')}</p>
+                </div>
+                <div>
+                  <StaticImage height={300} placeholder='blurred' alt='honeywalnutprawns' src='../images/menu/honeywalnutprawns.webp'/>
+                  <p className='is-size-7 has-text-right'>{t('Honey Walnut Shrimp')}</p>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-        <div>
-          <StaticImage height={300} placeholder='blurred' alt='honeywalnutprawns' src='../images/menu/honeywalnutprawns.webp'/>
-          <p className='is-size-7 has-text-right'>{t('Honey Walnut Shrimp')}</p>
-        </div>
-      </div>
+      </section>
     </Layout>
   )
 }

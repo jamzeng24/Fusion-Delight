@@ -11,12 +11,20 @@ const DimsumPage = () => {
 
   return (
     <Layout pageTitle={t('Dim sum')}>
-      <div className='block has-text-centered'>
-        <a className='norm-link is-size-4' href='/dimsum.pdf'>&gt;{t('Dim sum menu')}&lt;</a>
-        <p className='is-size-6'>{t('Prices')}</p>
-      </div>
-      <StaticImage height={1000} placeholder='blurred' alt='dimsummenu1' src='../images/menu/dimsummenu1.png'/>
-      <StaticImage height={1000} placeholder='blurred' alt='dimsummenu2' src='../images/menu/dimsummenu2.png'/>
+      <section className='section'>
+        <div className='container'>
+          <div className='columns is-centered'>
+            <div className='column is-10'>
+              <div className='block has-text-centered'>
+              <a className='norm-link is-size-4' href='/dimsum.pdf'>&gt;{t('Dim sum menu')}&lt;</a>
+              <p className='is-size-6'>{t('Prices')}</p>
+            </div>
+            <StaticImage height={1000} placeholder='blurred' alt='dimsummenu1' src='../images/menu/dimsummenu1.png'/>
+            <StaticImage height={1000} placeholder='blurred' alt='dimsummenu2' src='../images/menu/dimsummenu2.png'/>
+            </div>
+          </div>
+        </div>
+      </section>
     </Layout>
   )
 }

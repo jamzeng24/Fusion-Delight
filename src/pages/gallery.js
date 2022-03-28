@@ -13,7 +13,7 @@ const GalleryPage = ({ data }) => {
     <Layout pageTitle={t('Gallery')}>
       <div className='columns is-multiline is-centered is-mobile'>
         {images.map((currImage) => 
-          <div className='column is-narrow'>
+          <div className='column is-one-quarter-desktop is-half-tablet is-full-mobile'>
             <GatsbyImage image={currImage} />
           </div>
         )}
@@ -36,7 +36,7 @@ export const query = graphql`
     images: allImageSharp {
       edges {
         node {
-          gatsbyImageData(placeholder: BLURRED, width: 200)
+          gatsbyImageData(placeholder: BLURRED)
           id
         }
       }
